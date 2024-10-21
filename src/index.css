@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Doctor Glitch';
+    src: url('/src/assets/fonts/DoctorGlitch.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  .scrollbar-hidden {
+    scrollbar-width: none; /* For Firefox */
+  }
+  
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
