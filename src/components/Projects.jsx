@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Projects = () => {
   // Sample projects data with images
@@ -34,38 +34,39 @@ const Projects = () => {
       image: 'https://via.placeholder.com/300x200?text=Project+Five',
     },
   ];
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % projects.length);
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [projects.length]);
+
+ 
   return (
-    <div className='bg-[#1a1a1a] text-white py-20' id='projects'>
+    <div className='bg-[#1a1a1a] text-white py-20' id='about'>
       <div className='container mx-auto px-8 mt-40 md:px-16 lg:px-24'>
         <div className='font-extrabold text-6xl lg:text-8xl font-sans text-yellow-300 text-center mb-8'>
           PROJECTS
         </div>
-        <div className='overflow-x-auto'>
-          <div className='flex space-x-4'>
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className='bg-gray-800 text-white rounded shadow-lg p-4 w-64 transition-transform transform hover:scale-105 hover:shadow-2xl'
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className='rounded-t-lg w-full h-40 object-cover'
-                />
-                <h3 className='text-lg font-bold mt-2'>{project.title}</h3>
-                <p className='text-sm text-gray-400'>{project.description}</p>
-                <a
-                  href={project.link}
-                  className='text-yellow-300 underline mt-2 block'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  View Project
-                </a>
+        
+        <div className='flex justify-center md:h-96'>
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className='bg-yellow-400 text-white rounded shadow-lg p-8 m-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4'
+            >
+              <div className='flex items-center mb-4'>
+                <img src="" alt="" />{project.image}
+                <span className='mr-2'>{project.icon}</span>
+                <h2 className='text-lg'>{project.name}</h2>
               </div>
-            ))}
-          </div>
+              <p className='text-sm text-gray-400'>{project.description}</p>
+              <p className='text-sm text-gray-400 mt-4'>{project.duration}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
@@ -73,3 +74,4 @@ const Projects = () => {
 }
 
 export default Projects;
+     
