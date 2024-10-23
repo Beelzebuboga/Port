@@ -1,49 +1,25 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
 
-const Input = () => {
+const Contact = () => {
   return (
-    <div className='bg-[#1a1a1a] text-white py-20' id='about'>
-      <div className='container mx-auto px-8 mt-40 md:px-16 lg:px-24'>
-      <h3 className='font-extrabold text-6xl lg:text-8xl font-sans text-yellow-300 text-center mb-8'>CONTACT ME</h3>
-    <StyledWrapper>
-      <input
-        type="text"
-        placeholder="Write here..."
-        name="text"
-        className="input text-blackish"
-      />
-    </StyledWrapper>
-    <br></br>
-    <StyledWrapper>
-      <input
-        type="text"
-        placeholder="Write here..."
-        name="text"
-        className="input text-blackish"
-      />
-    </StyledWrapper>
+    <div className='bg-blackish py-20'>
+        <div className='container mx-auto px-8  md:px-16 lg:px-24'>
+          <div className='font-extrabold text-2xl lg:text-5xl font-sans text-yellow-300 text-center mb-8'>CONTACTS</div>
+          <div className=''>
+            <form action=""
+            inputMode=''>
+              <input type="text" name="Full name" id="" /><br></br>
+              <input type="text" name="" id="" /><br></br>
+              <input type="text" name="" id="" /><br></br>
+              <input type="text" name="" id="" /><br></br>
+              <input type="button" name="" id="" /><br></br>
+
+            </form>
+          </div>
+          </div>
+
     </div>
-</div>
-  );
-};
-
-const StyledWrapper = styled.div`
-  .input {
-  border-radius: 10px;
-  outline: 2px solid #FEBF00;
-  border: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #e2e2e2;
-  outline-offset: 3px;
-  padding: 10px 2rem;
-  transition: 0.25s;
+  )
 }
 
-.input:focus {
-  outline-offset: 5px;
-  background-color: #fff
-}
-`;
-
-export default Input;
+export default Contact

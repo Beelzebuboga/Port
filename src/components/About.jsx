@@ -54,7 +54,7 @@ const About = () => {
           <p className='text-base text-[#1a1a1a]'>
             I’m always open to new projects and collaborations. Let’s connect and create something extraordinary!
           </p>
-          <button className='mt-4 bg-[#1a1a1a] text-yellow-400 font-bold py-2 px-4 rounded hover:bg-yellow-500 transition duration-300'>
+          <button className='mt-4 bg-[#1a1a1a] text-yellow-400 font-bold py-2 px-4 rounded hover:text-blackish hover:bg-white transition duration-300'>
             Get in Touch
           </button>
         </div>

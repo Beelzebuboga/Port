@@ -4,8 +4,8 @@ const Projects = () => {
   // Sample projects data with images
   const projects = [
     {
-      title: 'Project One',
-      description: 'A web application for managing tasks.',
+      title: 'MSUKC Honbu Dojo Website',
+      description: 'A website for an organization.',
       link: 'https://example.com/project-one',
       image: 'https://via.placeholder.com/300x200?text=Project+One',
     },
@@ -47,24 +47,22 @@ const Projects = () => {
  
   return (
     <div className='bg-[#1a1a1a] text-white py-20' id='about'>
-      <div className='container mx-auto px-8 mt-40 md:px-16 lg:px-24'>
-        <div className='font-extrabold text-6xl lg:text-8xl font-sans text-yellow-300 text-center mb-8'>
+      <div className='container mx-auto px-8  md:px-16 lg:px-24'>
+        <div className='font-extrabold text-2xl lg:text-5xl font-sans text-yellow-400 text-center mb-8'>
           PROJECTS
         </div>
         
-        <div className='flex justify-center md:h-96'>
+        <div className='flex flex-wrap justify-center'>
           {projects.map((project, index) => (
             <div
               key={index}
-              className='bg-yellow-400 text-white rounded shadow-lg p-8 m-4 w-full md:w-1/2 lg:w-1/3 xl:w-1/4'
-            >
-              <div className='flex items-center mb-4'>
-                <img src="" alt="" />{project.image}
-                <span className='mr-2'>{project.icon}</span>
-                <h2 className='text-lg'>{project.name}</h2>
-              </div>
-              <p className='text-sm text-gray-400'>{project.description}</p>
-              <p className='text-sm text-gray-400 mt-4'>{project.duration}</p>
+              className='bg-blackish rounded shadow-lg p-8 m-4 w-full lg:h-96 md:w-1/3 lg:w-1/4 h-96'>
+              <span className='text-2xl mb-4 text-yellow-400 font-bold py-2'>{project.title}</span>
+              <p className='text-base mb-10 font-sans font-light text-white lg:mt-5 lg:text-pretty'>{project.description}</p>
+              <button className=' text-yellow-400  rounded-lg hover:bg-blackish hover:text-white transition duration-300 border-2 border-yellow-400 px-4 py-1'>
+              Demo
+            </button>
+
             </div>
           ))}
         </div>

@@ -8,7 +8,7 @@ const Experience = () => {
       name: 'Web Development',
       description: 'Building scalable and responsive web applications',
       icon: '💻',
-      duration: '2018-2020',
+      duration: '2023-2024',
     },
     {
       name: 'Mobile App Development',
@@ -16,15 +16,10 @@ const Experience = () => {
       icon: '📱',
       duration: '2020-2022',
     },
+
     {
-      name: 'UI/UX Design',
-      description: 'Designing intuitive and user-friendly interfaces',
-      icon: '🎨',
-      duration: '2015-2018',
-    },
-    {
-      name: 'Data Science',
-      description: 'Analyzing and interpreting complex data to drive insights',
+      name: 'Data Science/Analyst',
+      description: 'Analyzing and interpreting complex data',
       icon: '📊',
       duration: '2012-2015',
     },
@@ -46,14 +41,15 @@ const Experience = () => {
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className='bg-yellow-400 rounded shadow-lg p-8 m-4 w-full md:w-1/2 lg:w-1/3'
+              className='bg-blackish rounded shadow-lg p-8 m-4 w-full md:w-2/3 lg:w-64'
             >
               <div className='flex items-center mb-4'>
-                <span className='text-2xl mr-2 mb-4'>{experience.icon}</span>
-                <h2 className='text-2xl mb-4 text-[#1a1a1a] font-bold'>{experience.name}</h2>
+                
+                <h2 className='text-2xl mb-4 text-yellow-400 font-bold py-2'>{experience.name}</h2>
+                
               </div>
-              <p className='text-base font-sans font-light text-[#1a1a1a]'>{experience.description}</p>
-              <p className='text-base bg-blackish font-bold text-center md:py-2 md:px-2 md:mt-20 py-1 px-1 text-yellow-400 mt-4'>{experience.duration}</p>
+              <p className='text-base mb-10 font-sans font-light text-white lg:mt-5 lg:text-pretty'>{experience.description}</p>
+              <p className='text-base bg-blackish font-bold md:py-2 py-1 px-1 text-yellow-400 lg:align-bottom'>{experience.duration}</p>
             </div>
           ))}
         </div>

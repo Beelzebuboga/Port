@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
 
           <div className='mt-8 flex flex-col lg:flex-row items-center justify-center lg:justify-start space-y-4 lg:space-y-0 lg:space-x-6'>
-            <button className='bg-yellow-400 text-{#1a1a1a} font-bold py-2 px-4 rounded hover:bg-blackish hover:text-white transition duration-300l'>
+            <button className='bg-yellow-400 text-{#1a1a1a} font-bold py-2 px-4 rounded hover:bg-blackish hover:text-white transition duration-300'>
               Let us Connect!
             </button>
             <button className='bg-yellow-400 text-{#1a1a1a} font-bold py-2 px-4 rounded hover:bg-blackish hover:text-white transition duration-300'>
