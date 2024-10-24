@@ -48,7 +48,7 @@ const Projects = () => {
   return (
     <div className='bg-[#1a1a1a] text-white py-20' id='about'>
       <div className='container mx-auto px-8  md:px-16 lg:px-24'>
-        <div className='font-extrabold text-2xl lg:text-5xl font-sans text-yellow-400 text-center mb-8'>
+        <div className='font-extrabold text-2xl lg:text-5xl font-sans text-yellow-300 text-center mb-8'>
           PROJECTS
         </div>
         
