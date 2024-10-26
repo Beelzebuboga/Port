@@ -18,11 +18,11 @@ const Hero = () => {
             "You don't have to be great to start, but you have to start to be great."
           </p>
 
-          <div className='mt-8 flex flex-col lg:flex-row items-center justify-center lg:justify-start space-y-4 lg:space-y-0 lg:space-x-6'>
-            <button className='bg-yellow-400 text-{#1a1a1a} font-bold py-2 px-4 rounded hover:bg-blackish hover:text-white transition duration-300'>
+          <div className='mt-8 flex flex-col lg:flex-row items-center justify-center lg:justify-start space-y-4 lg:space-y-0 lg:space-x-6 blac'>
+            <button className='bg-yellow-400 text-{#1a1a1a} font-bold py-2 px-4 rounded text-blackish hover:bg-blackish hover:text-white transition duration-300'>
               Let us Connect!
             </button>
-            <button className='bg-yellow-400 text-{#1a1a1a} font-bold py-2 px-4 rounded hover:bg-blackish hover:text-white transition duration-300'>
+            <button className='bg-yellow-400 text-{#1a1a1a} font-bold py-2 px-4 rounded text-blackish hover:bg-blackish hover:text-white transition duration-300'>
               View My Resume
             </button>
           </div>

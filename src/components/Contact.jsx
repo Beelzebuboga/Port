@@ -10,20 +10,20 @@ const Contact = () => {
             <form className='border-2 border-yellow-400 lg:w-1/3 rounded-lg'>
               <div className='text-2xl mb-4 px-6 py-4'> 
                 <h1 className='text-yellow-400 font-bold text-lg'>Full name</h1>
-                <input type="text" name="" id="" className='border-2 border-white text-base   text-white bg-blackish rounded-lg' />
+                <input type="text" placeholder="Type here" className="input input-bordered input-sm input-warning w-full max-w-xs" />
               </div>
               <div className='text-2xl mb-4 px-6 py-4'> 
                 <h1 className='text-yellow-400 font-bold text-lg'>Email Address</h1>
-                <input type="text" name="" id="" className='border-2 border-white text-base   text-white bg-blackish rounded-lg' />
-              </div>
+                <input type="text" placeholder="Type here" className="input input-bordered input-sm input-warning w-full max-w-xs" />
+                </div>
               <div className='text-2xl mb-4 px-6 py-4'> 
                 <h1 className='text-yellow-400 font-bold text-lg'>Contact Number</h1>
-                <input type="text" name="" id="" className='border-2 border-white text-base   text-white bg-blackish rounded-lg' />
+                <input type="text" placeholder="Type here" className="input input-bordered input-sm input-warning w-full max-w-xs" />
               </div>
               <div className='text-2xl mb-4 px-6 py-4'> 
                 <h1 className='text-yellow-400 font-bold text-lg'>Suggestion and Comments</h1>
-                <input type="text" name="" id="" className='border-2 border-white text-base  h-32 text-white bg-blackish rounded-lg' />
-              </div>
+                <input type="text" placeholder="Type here" className="input input-bordered input-sm h-28 m input-warning w-full max-w-xs" />
+                </div>
               <div className='px-6 py-4'> 
               <button className=' text-yellow-400  rounded-lg hover:bg-blackish hover:text-white transition duration-300 border-2 border-white px-4 py-1'>
               Send
