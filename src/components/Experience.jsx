@@ -16,7 +16,6 @@ const Experience = () => {
       icon: '📱',
       duration: '2020-2022',
     },
-
     {
       name: 'Data Science/Analyst',
       description: 'Analyzing and interpreting complex data',
@@ -32,24 +31,25 @@ const Experience = () => {
   ];
 
   return (
-    <div className='bg-[#1a1a1a] text-white py-20' id='about'>
-      <div className='container mx-auto px-8 mt-16 md:px-16 lg:px-24'>
-        <div className='font-extrabold text-2xl lg:text-5xl font-sans text-yellow-300 text-center mb-8'>
+    <div className='bg-[#1a1a1a] text-white py-20' id='experience'>
+      <div className='container mx-auto px-6 md:px-12 lg:px-24'>
+        <h1 className='font-extrabold text-3xl lg:text-5xl font-sans text-yellow-300 text-center mb-8'>
           EXPERIENCES
-        </div>
+        </h1>
         <div className='flex flex-wrap justify-center'>
           {experiences.map((experience, index) => (
             <div
               key={index}
-              className='bg-blackish rounded shadow-lg p-8 m-4 w-full md:w-2/3 lg:w-64'
+              className='bg-blackish rounded-lg shadow-lg p-6 m-4 w-full md:w-2/3 lg:w-64 transition-transform transform hover:scale-105'
             >
               <div className='flex items-center mb-4'>
-                
-                <h2 className='text-2xl mb-4 text-yellow-400 font-bold py-2'>{experience.name}</h2>
-                
+                <span className='text-4xl mr-2'>{experience.icon}</span>
+                <h2 className='text-2xl text-yellow-400 font-bold'>{experience.name}</h2>
               </div>
-              <p className='text-base mb-10 font-sans font-light text-white lg:mt-5 lg:text-pretty'>{experience.description}</p>
-              <p className='text-base bg-blackish font-bold md:py-2 py-1 px-1 text-yellow-400 lg:align-bottom'>{experience.duration}</p>
+              <p className='text-base mb-4 font-sans font-light text-gray-300'>{experience.description}</p>
+              <p className='text-base bg-yellow-400 font-bold py-1 px-2 rounded text-blackish'>
+                {experience.duration}
+              </p>
             </div>
           ))}
         </div>
