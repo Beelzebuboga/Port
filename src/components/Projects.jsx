@@ -1,4 +1,5 @@
 import React from 'react';
+import Honbu from '../assets/Photos/msukcpage.png'
 
 const Projects = () => {
   // Sample projects data with images
@@ -6,8 +7,8 @@ const Projects = () => {
     {
       title: 'MSUKC Honbu Dojo Website',
       description: 'A website for an organization.',
-      link: 'https://example.com/project-one',
-      image: 'https://via.placeholder.com/300x200?text=Project+One',
+      link: 'http://127.0.0.1:5500/index.html',
+      image: Honbu,
     },
     {
       title: 'Project Two',
@@ -51,8 +52,9 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className='rounded-t-lg object-cover h-48 w-full'
+                className='rounded-t-lg object-cover h-40 w-full'
               />
+
               <div className='p-4'>
                 <h3 className='text-xl mb-2 text-yellow-400 font-bold'>{project.title}</h3>
                 <p className='text-base mb-4 font-sans font-light text-white'>{project.description}</p>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa'; // Import social media icons
+import HeroImage from '../assets/Photos/photo.jpg';
 
 const Contact = () => {
   return (
@@ -15,9 +16,9 @@ const Contact = () => {
             <div className='bg-blackish shadow-lg rounded-lg overflow-hidden'>
               {/* Image Section */}
               <img 
-                src="../assets/Photos/photo.jpg" // Ensure the path is correct
+                src={HeroImage} // Ensure the path is correct
                 alt="Profile" 
-                className="w-full h-48 object-cover" 
+                className="w-full h-60 mt-20 object-cover" 
               />
               
               {/* Content Section */}

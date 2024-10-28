@@ -5,9 +5,9 @@ const Navbar = () => {
     <nav className='bg-[#1a1a1a] text-white px-8 md:px-16 lg:px-24 shadow-lg'>
       <div className='flex justify-center py-4 mx-auto items-center'>
         <div className="burger md:hidden block">
-          <div className="button">
+          <div className="button rel">
             {/* dropdown */}
-            <input type="button" value="Menu" />
+            <input type="button" value="Menu"/>
           </div>
         </div>
         <div className='space-x-6 md:block hidden'>
