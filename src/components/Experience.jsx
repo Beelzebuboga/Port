@@ -1,5 +1,4 @@
 import React from 'react';
-import Projects from './Projects';
 
 const Experience = () => {
   // Sample experiences with additional details

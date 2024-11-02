@@ -52,7 +52,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className='rounded-t-lg object-cover h-40 w-full'
+                className='rounded-t-lg object-cover w-full'
               />
 
               <div className='p-4'>

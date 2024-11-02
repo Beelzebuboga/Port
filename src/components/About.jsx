@@ -1,71 +1,57 @@
-import React from 'react';
-import AboutImage from '../assets/Photos/photo.jpg'; // Ensure the path is correct
-import htmlLogo from '../assets/Photos/html.png'; // Ensure this path is correct
-import cssLogo from '../assets/Photos/css.png'; // Ensure this path is correct
-import jsLogo from '../assets/Photos/javascript.png'; // Ensure this path is correct
-import reactLogo from '../assets/Photos/react.png'; // Ensure this path is correct
-import tailwindLogo from '../assets/Photos/tailwindcss.png'; // Ensure this path is correct
-import cppLogo from '../assets/Photos/cpp.png'; // Ensure this path is correct
-import githubLogo from '../assets/Photos/github.png'; // Ensure this path is correct
-import pythonLogo from '../assets/Photos/python.png'; // Ensure this path is correct
-import bootstrapLogo from '../assets/Photos/bootstrap.png'; // Ensure this path is correct
+'use client'
 
-const About = () => {
+
+export default function Example() {
+
+
   return (
-    <div className='bg-blackish text-white py-20' id='about'>
-      <div className='container mx-auto px-6 md:px-12 lg:px-24'>
-        <div className='flex flex-col gap-12 md:flex-row items-start md:space-x-16 mt-12 lg:mt-20'>
-          {/* Left Side: About Me */}
-          <div className='flex-1 mb-8 md:mb-0'>
-          <h1 className='font-extrabold text-3xl lg:text-5xl font-sans text-yellow-300 text-center mb-8'>
-          ABOUT ME
-        </h1>
-            <p className='mb-4 text-center text-base lg:text-left md:text-lg leading-relaxed'>
-              I am a skilled full-stack developer who has taught myself to build web applications using HTML, CSS, and JavaScript. I specialize in popular frameworks like React and Bootstrap. I am also proficient in languages like Python and C++. 
-              What started as a hobby has become a driving force in my life, motivating me to constantly learn and grow as a developer. I am dedicated to delivering high-quality work, collaborating effectively, and meeting project deadlines. Let us work together to see how my skills can benefit your projects!
-            </p>
+    <div className="bg-white">
+      <div className="relative isolate px-6 lg:px-8">
+        <div
+          aria-hidden="true"
+          className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        >
+          <div
+            style={{
+              clipPath:
+                'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
+            }}
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-red to-headings opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          />
+        </div>
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-headings">
+              Announcing our next round of membership.{' '}
+              <a href="#" className="font-semibold text-headings">
+                <span aria-hidden="true" className="absolute inset-0" />
+                Read more <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
           </div>
-
-          {/* Right Side: Skills */}
-          <div className='flex-1'>
-          <h1 className='font-extrabold text-3xl lg:text-5xl font-sans text-yellow-300 text-center mb-8'>
-          SKILLS
-        </h1>
-            <div className='flex flex-wrap justify-center md:justify-start mt-4'>
-              {[
-                { src: htmlLogo, alt: 'HTML' },
-                { src: cssLogo, alt: 'CSS' },
-                { src: jsLogo, alt: 'JavaScript' },
-                { src: reactLogo, alt: 'React' },
-                { src: tailwindLogo, alt: 'Tailwind CSS' },
-                { src: cppLogo, alt: 'C++' },
-                { src: githubLogo, alt: 'GitHub' },
-                { src: pythonLogo, alt: 'Python' },
-                { src: bootstrapLogo, alt: 'Bootstrap' },
-              ].map((logo, index) => (
-                <div key={index} className='p-2 rounded-lg flex border-2 border-yellow-400 items-center justify-center m-2 hover:bg-gray-800 transition duration-300'>
-                  <img src={logo.src} alt={logo.alt} className='h-16 w-16 md:h-20 md:w-20' />
-                </div>
-              ))}
+          <div className="text-center">
+            <h1 className="lg:text-7xl text-headings text-6xl font-fantasy-bold">
+            MINDANAO STATE UNIVERSITY KARATE CLUB
+            </h1>
+            <p className="mt-8 text-pretty text-3xl font-montserrat font-medium text-black">
+            Join the Legacy: Be the Warrior of the Lake
+            </p>
+            <blockquote className="font-mono mt-2">"Find a Dojo that has strong roots, a good lineage and tradition, then you will have a better opportunity to make Karatedo a lifetime study."
+            </blockquote>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <a
+                href="#"
+                className="rounded-md bg-headings px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started
+              </a>
+              <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                Learn more <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </div>
-
-        {/* Call-to-Action Section */}
-        <div className="mt-10 text-center bg-yellow-400 p-4 lg:p-6 rounded-lg shadow-lg">
-          <h3 className='text-2xl mb-4 text-gray-900 font-bold'>Let’s Build Something Amazing Together!</h3>
-          <p className='text-base text-gray-900'>
-            I’m always open to new projects and collaborations. Let’s connect and create something extraordinary!
-          </p>
-          <a href="#contact">
-            <button className='mt-4 bg-gray-900 text-yellow-400 font-bold py-2 px-4 rounded hover:bg-yellow-500 hover:text-gray-900 transition duration-300'>
-              Get in Touch
-            </button>
-          </a>
-        </div>
       </div>
- </div>
-  );
+    </div>
+  )
 }
-
-export default About;
